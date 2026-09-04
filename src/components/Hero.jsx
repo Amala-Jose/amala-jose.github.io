@@ -22,6 +22,9 @@ export default function Hero() {
           <a className="btn btn-ghost" href="#contact">
             Get in touch
           </a>
+          <a className="btn btn-ghost" href="../../public/Amala_Jose_Resume.pdf" download="Amala_Jose_Resume.pdf">
+            Download Resume
+          </a>
         </div>
       </div>
     </section>
