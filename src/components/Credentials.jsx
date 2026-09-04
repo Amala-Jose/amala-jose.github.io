@@ -6,7 +6,6 @@ export default function Credentials() {
       <div className="container">
         <div className="section-head">
           <h2>Credentials</h2>
-          <span className="section-index">05</span>
         </div>
         <div className="credentials-grid">
           <div>

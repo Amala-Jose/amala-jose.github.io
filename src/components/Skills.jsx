@@ -6,7 +6,6 @@ export default function Skills() {
       <div className="container">
         <div className="section-head">
           <h2>Skills</h2>
-          <span className="section-index">02</span>
         </div>
         <div className="skills-grid">
           {skillGroups.map((group) => (

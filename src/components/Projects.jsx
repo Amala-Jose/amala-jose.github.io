@@ -6,7 +6,6 @@ export default function Projects() {
       <div className="container">
         <div className="section-head">
           <h2>Projects</h2>
-          <span className="section-index">04</span>
         </div>
 
         {projects.length === 0 ? (

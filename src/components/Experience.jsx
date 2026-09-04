@@ -6,7 +6,6 @@ export default function Experience() {
       <div className="container">
         <div className="section-head">
           <h2>Experience</h2>
-          <span className="section-index">03</span>
         </div>
         <ol className="timeline">
           {experience.map((role) => (
