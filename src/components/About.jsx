@@ -6,7 +6,6 @@ export default function About() {
       <div className="container">
         <div className="section-head">
           <h2>About</h2>
-          <span className="section-index">01</span>
         </div>
         <div className="about-body">
           {profile.summary.map((paragraph, i) => (

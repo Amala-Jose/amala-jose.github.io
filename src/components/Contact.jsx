@@ -6,7 +6,6 @@ export default function Contact() {
       <div className="container contact-inner">
         <div className="section-head">
           <h2>Get in touch</h2>
-          <span className="section-index">06</span>
         </div>
         <p className="contact-line">
           Open to Frontend Architect and Technical Lead roles. The fastest
