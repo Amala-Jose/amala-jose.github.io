@@ -1,14 +1,17 @@
-import { profile } from "../data/content";
+import "./Footer.css";
 
-export default function Footer() {
-  const year = new Date().getFullYear();
+/**
+ * The colophon has to stay true. If the stack changes, this changes with it.
+ */
+export function Footer() {
   return (
     <footer className="footer">
-      <div className="container footer-inner">
-        <span>
-          © {year} {profile.name}
-        </span>
-        <a href="#top">Back to top</a>
+      <div className="wrap">
+        <p className="footer__colophon">
+          Built with React and Vite, hand written CSS, no UI kit and no tracking. Two typefaces. It
+          is meant to load quickly, work with a keyboard, and read cleanly in a screen reader,
+          because that is the job I am asking you to consider me for.
+        </p>
       </div>
     </footer>
   );

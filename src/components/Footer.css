@@ -1,0 +1,13 @@
+.footer {
+  border-top: 1px solid var(--rule);
+  padding: 2.5rem 0 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.footer__colophon {
+  max-width: 36em;
+  font-size: 0.9375rem;
+  color: var(--muted);
+  margin: 0;
+}

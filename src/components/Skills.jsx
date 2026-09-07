@@ -1,23 +1,16 @@
-import { skillGroups } from "../data/content";
+import { skills } from "../data/index.js";
+import "./Skills.css";
 
-export default function Skills() {
+export function Skills() {
   return (
-    <section id="skills" className="section skills">
-      <div className="container">
-        <div className="section-head">
-          <h2>Skills</h2>
-        </div>
-        <div className="skills-grid">
-          {skillGroups.map((group) => (
-            <div className="skill-group" key={group.title}>
-              <h3>{group.title}</h3>
-              <ul className="skill-chips">
-                {group.items.map((item) => (
-                  <li key={item} className="chip">
-                    {item}
-                  </li>
-                ))}
-              </ul>
+    <section aria-labelledby="skills-heading">
+      <div className="wrap section-pad">
+        <h2 id="skills-heading">What I work with</h2>
+        <div className="skills">
+          {skills.map((group) => (
+            <div key={group.id}>
+              <h3 className="skills__group">{group.group}</h3>
+              <p className="skills__body">{group.body}</p>
             </div>
           ))}
         </div>

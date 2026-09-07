@@ -1,29 +1,27 @@
-import { profile } from "../data/content";
+import { Actions } from "./Actions.jsx";
+import { profile } from "../data/index.js";
+import "./Contact.css";
 
-export default function Contact() {
+export function Contact() {
   return (
-    <section id="contact" className="section contact">
-      <div className="container contact-inner">
-        <div className="section-head">
-          <h2>Get in touch</h2>
+    <section aria-labelledby="contact-heading">
+      <div className="wrap section-pad">
+        <h2 id="contact-heading">Get in touch</h2>
+
+        <div className="contact__actions">
+          <Actions size="lg" />
         </div>
-        <p className="contact-line">
-          Open to Frontend Architect and Technical Lead roles. The fastest
-          way to reach me is email or LinkedIn.
-        </p>
-        <ul className="contact-list">
-          <li>
+
+        <div className="contact__lines">
+          <p>
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
-          </li>
-          <li>
-            <a href={`tel:${profile.phoneHref}`}>{profile.phone}</a>
-          </li>
-          <li>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer">
-              linkedin.com/in/amala-jose
-            </a>
-          </li>
-        </ul>
+          </p>
+          <p>
+            <a href={`tel:${profile.phone.replace(/\s/g, "")}`}>{profile.phone}</a>
+          </p>
+        </div>
+
+        <p className="contact__fine">{profile.education}</p>
       </div>
     </section>
   );

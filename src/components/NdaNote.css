@@ -1,0 +1,23 @@
+.nda {
+  padding: clamp(2.5rem, 6vw, 3.5rem) 0;
+}
+
+.nda__heading {
+  font-size: 1.0625rem;
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.nda__body {
+  border-left: 2px solid var(--ink);
+  padding-left: 1.5rem;
+  max-width: 38em;
+}
+
+.nda__body p {
+  margin: 0 0 0.9rem;
+}
+
+.nda__body p:last-child {
+  margin-bottom: 0;
+}

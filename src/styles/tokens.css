@@ -1,0 +1,38 @@
+/*
+  Design tokens.
+
+  One rule governs colour on this site: --measure is reserved for values that
+  were actually measured (metrics, years). It never appears as decoration.
+*/
+
+:root {
+  /* surface */
+  --paper: #e9ebe6;
+  --surface: #f2f3ef;
+
+  /* ink */
+  --ink: #1b211e;
+  --muted: #6e756e;
+  --rule: #c7ccc4;
+
+  /* reserved for measured values only */
+  --measure: #2f6b4f;
+
+  /* type */
+  --sans: "Bricolage Grotesque", system-ui, sans-serif;
+  --serif: "Source Serif 4", Georgia, serif;
+
+  /* layout */
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --maxw: 74rem;
+  --measure-prose: 36em;
+
+  /* motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --dur-fast: 0.18s;
+  --dur-med: 0.25s;
+
+  /* pointer position, written by usePointerGrid */
+  --mx: 50vw;
+  --my: 30vh;
+}
