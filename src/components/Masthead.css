@@ -5,6 +5,7 @@
   background: var(--paper);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s var(--ease);
+  padding: 1em 0;
 }
 
 .masthead.is-stuck {

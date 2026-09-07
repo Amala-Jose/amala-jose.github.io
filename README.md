@@ -96,46 +96,6 @@ To replace the résumé, drop the new PDF in `public/` and update
 
 ---
 
-## Before publishing
-
-These are open on purpose. The site's credibility rests on everything on it
-being true, so none of them should ship as they are.
-
-- [ ] **Portrait.** `public/portrait.jpg` is currently an AI generated image.
-      Replace it with a real photograph.
-- [ ] **LinkedIn URL.** `profile.linkedinUrl` is `#`.
-- [ ] **Practice work.** The three entries in `src/data/lab.js` are
-      placeholders that describe the intended shape. Replace them with real
-      repositories, or delete the file's contents and remove `<Lab />` from
-      `App.jsx`. An empty section is fine. Invented projects are not.
-- [ ] **AI practice section.** Rewrite `AiPractice.jsx` in Amala's own words
-      with a real example.
-- [ ] **Case study "What it cost" paragraphs.** These are reasonable
-      inferences from the résumé, not statements Amala has made. Confirm or
-      rewrite both.
-- [ ] **Colophon.** `Footer.jsx` describes how the site is built. If the stack
-      changes, change that sentence with it.
-
----
-
-## Accessibility and performance
-
-Worth keeping true, since the site claims it:
-
-- Landmarks (`header`, `main`, `footer`), labelled sections, ordered headings
-- Skip link to main content
-- Visible focus rings on every interactive element
-- `prefers-reduced-motion` honoured; the entrance animation and the pointer
-  grid both switch off
-- The pointer grid does not run at all on touch devices, and pointer writes are
-  throttled to one animation frame
-- Sticky header state uses `IntersectionObserver` rather than a scroll listener
-- Fonts load with `display=swap` behind preconnects
-
-Run Lighthouse against `npm run preview`, not the dev server.
-
----
-
 ## Deploying
 
 The build is fully static.
@@ -149,4 +109,4 @@ then publish `dist`.
 
 ## Licence
 
-Content and images are Amala Jose's. The code is hers to reuse.
+Content and images are Amala Jose's. The code is mine to reuse.
