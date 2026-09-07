@@ -1,0 +1,36 @@
+.grid-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s var(--ease);
+
+  background-image:
+    linear-gradient(to right, rgba(27, 33, 30, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 33, 30, 0.2) 1px, transparent 1px);
+  background-size: 26px 26px;
+
+  -webkit-mask-image: radial-gradient(
+    circle 190px at var(--mx) var(--my),
+    #000 0%,
+    rgba(0, 0, 0, 0.55) 45%,
+    transparent 78%
+  );
+  mask-image: radial-gradient(
+    circle 190px at var(--mx) var(--my),
+    #000 0%,
+    rgba(0, 0, 0, 0.55) 45%,
+    transparent 78%
+  );
+}
+
+.grid-layer.is-on {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid-layer {
+    display: none;
+  }
+}

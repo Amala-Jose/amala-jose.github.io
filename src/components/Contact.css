@@ -1,0 +1,15 @@
+.contact__actions {
+  margin-bottom: 1.75rem;
+}
+
+.contact__lines p {
+  margin: 0 0 0.6rem;
+  font-size: 1.0625rem;
+}
+
+.contact__fine {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  margin-top: 1.5rem;
+  max-width: 38em;
+}

@@ -1,0 +1,18 @@
+.skills {
+  display: grid;
+  gap: 2rem 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  max-width: 60em;
+}
+
+.skills__group {
+  font-size: 1.0625rem;
+  margin: 0 0 0.6rem;
+  font-weight: 600;
+}
+
+.skills__body {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
