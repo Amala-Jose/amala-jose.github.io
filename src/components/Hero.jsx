@@ -11,7 +11,7 @@ export function Hero() {
       <p className="hero__intro reveal reveal-2">{profile.intro}</p>
 
       <div className="hero__actions reveal reveal-3">
-        <Actions size="lg" />
+        <Actions size="lg" target="_blank"/>
       </div>
 
       <div className="reveal reveal-4">

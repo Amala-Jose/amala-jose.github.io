@@ -9,7 +9,7 @@ export function Contact() {
         <h2 id="contact-heading">Get in touch</h2>
 
         <div className="contact__actions">
-          <Actions size="lg" />
+          <Actions size="lg" target="_blank"/>
         </div>
 
         <div className="contact__lines">
