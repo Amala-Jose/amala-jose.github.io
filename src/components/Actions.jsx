@@ -7,7 +7,7 @@ import "./Actions.css";
  * follow it. This set is reused in the hero and the contact section so the
  * priority never drifts between them.
  */
-export function Actions({ size = "lg" }) {
+export function Actions({ size = "lg", target = "_self" }) {
   return (
     <div className="actions">
       <Button href={profile.resumeUrl} tone="solid" size={size} download>
@@ -16,7 +16,7 @@ export function Actions({ size = "lg" }) {
       <Button href={`mailto:${profile.email}`} size={size}>
         Email me
       </Button>
-      <Button href={profile.linkedinUrl} size={size}>
+      <Button href={profile.linkedinUrl} size={size} target={target}>
         LinkedIn
       </Button>
     </div>

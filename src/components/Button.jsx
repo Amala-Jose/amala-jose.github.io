@@ -7,13 +7,14 @@ import "./Button.css";
  * @param {"md"|"lg"} size
  * @param {boolean} download       renders a download attribute for file links
  */
-export function Button({ href, children, tone = "quiet", size = "md", download = false }) {
+export function Button({ href, children, tone = "quiet", size = "md", download = false, target = "_self" }) {
   const className = ["btn", `btn--${tone}`, size === "lg" && "btn--lg"].filter(Boolean).join(" ");
 
   return (
     <a
       className={className}
       href={href}
+      target={target}
       download={download || undefined}
       rel={download ? undefined : "noopener"}
     >
