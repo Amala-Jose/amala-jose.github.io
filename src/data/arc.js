@@ -32,6 +32,6 @@ export const arc = [
     when: "2012 to 2015",
     role: "Software Engineer",
     where: "Sakha Global Technologies, Bangalore",
-    what: "Interactive game interfaces, reusable templates and responsive sites for enterprise clients, back when cross browser was a daily negotiation.",
+    what: "Built the scoreboard feature for virtual world/gaming site for young football fans using JavaScript for game logic, .tpl template files for markup/rendering, and sprite sheets for score and UI graphics — a common pattern for lightweight browser games of that era and responsive sites for enterprise clients, back when cross browser was a daily negotiation.",
   },
 ];

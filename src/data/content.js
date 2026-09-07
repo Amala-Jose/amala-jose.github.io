@@ -183,7 +183,7 @@ export const projects = [];
 export const credentials = {
   education: [
     {
-      degree: "Master of Science, Computer Science",
+      degree: "MCA",
       school: "IGNOU, Bangalore, India",
       year: "2016",
     },

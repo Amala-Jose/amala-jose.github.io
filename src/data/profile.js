@@ -10,12 +10,12 @@ export const profile = {
   portraitUrl: "/portrait.jpg",
 
   // TODO: replace with the real profile URL before publishing.
-  linkedinUrl: "#",
+  linkedinUrl: "https://www.linkedin.com/in/amala-jose-040b4260/",
 
-  headline: "I own the frontend architecture, and I still write the code.",
+  headline: "I lead the team. I write the code. I'm working toward owning the shape of it.",
   intro:
-    "Fourteen years building for the web. Today that means architecture, design systems and engineering standards across enterprise healthcare platforms, and mentoring the eight engineers who ship them.",
+    "Fourteen years building for the web. Across several enterprise healthcare platforms, I've worked in technical leadership, frontend architecture, design systems and engineering standards, while mentoring teams of up to eight engineers.",
 
   education:
-    "MSc Computer Science, IGNOU. BSc Computer Science, Providence Women's College, Kerala. CEO Award for Innovation and Execution Excellence, 2019.",
+    "MCA, IGNOU. BSc Computer Science, Providence Women's College, Kerala. CEO Award for Innovation and Execution Excellence, 2019.",
 };

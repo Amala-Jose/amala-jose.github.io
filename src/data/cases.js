@@ -8,7 +8,7 @@ export const cases = [
   {
     id: "component-library",
     title: "One component library instead of seven opinions",
-    context: "Emids Technologies, healthcare SaaS platforms, 2021 to now",
+    context: "Wellness platform, Tech-enabled services platform, 2021 to now",
     parts: [
       {
         term: "The problem",

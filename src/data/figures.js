@@ -3,7 +3,7 @@ export const figures = [
   {
     id: "platforms",
     value: "7",
-    label: "enterprise healthcare platforms I own the frontend architecture for",
+    label: "enterprise healthcare platforms I've worked across",
   },
   {
     id: "load",
