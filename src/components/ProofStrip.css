@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   display: grid;
+  text-align: center;
   gap: 1.75rem 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
 }
@@ -27,5 +28,4 @@
   margin-top: 0.3rem;
   font-size: 0.9375rem;
   line-height: 1.35;
-  max-width: 14em;
 }
