@@ -26,7 +26,7 @@ function CaseStudy({ study, defaultOpen }) {
 
 export function CaseStudies() {
   return (
-    <section id="work" aria-labelledby="work-heading">
+    <section id="casestudy" aria-labelledby="work-heading">
       <div className="wrap section-pad">
         <h2 id="work-heading">Two decisions worth explaining</h2>
         <div className="cases">

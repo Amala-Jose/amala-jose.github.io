@@ -2,8 +2,8 @@ import { useActiveSection } from "../hooks/useActiveSection.js";
 import "./SectionNav.css";
 
 const LINKS = [
-  { id: "proof", label: "Proof" },
-  { id: "work", label: "Work" },
+  { id: "casestudy", label: "Case Study" },
+  { id: "lab", label: "Work" },
   { id: "route", label: "Timeline" },
   { id: "contact", label: "Contact" },
 ];
