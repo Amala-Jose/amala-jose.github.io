@@ -4,7 +4,7 @@ import "./Arc.css";
 
 export function Arc() {
   return (
-    <section aria-labelledby="arc-heading">
+    <section id="route" aria-labelledby="arc-heading">
       <div className="wrap section-pad">
         <h2 id="arc-heading">The route here</h2>
         <ol className="arc__list">
