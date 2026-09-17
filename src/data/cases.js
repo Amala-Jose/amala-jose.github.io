@@ -24,7 +24,7 @@ export const cases = [
       },
       {
         term: "Where it landed",
-        outcome: "Duplicate UI development effort dropped by around 60%",
+        outcome: "Duplicate UI development effort dropped noticeably",
         body: ", and interface consistency stopped being something we corrected at the end of a release.",
       },
     ],

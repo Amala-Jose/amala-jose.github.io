@@ -4,7 +4,7 @@ export const arc = [
     when: "2021 to now",
     role: "Technical Lead",
     where: "Emids Technologies, Bangalore",
-    what: "Frontend architecture across enterprise healthcare SaaS, 50+ production React and Next.js features, engineering standards, design reviews and technical direction across multiple product teams.",
+    what: "Owned frontend implementation across enterprise healthcare SaaS applications, shipped production React and Next.js features, contributed to engineering standards and design reviews, and helped shape technical direction across product teams.",
   },
   {
     id: "emids-lead-analyst",
@@ -25,7 +25,7 @@ export const arc = [
     when: "2015 to 2016",
     role: "Senior Software Engineer",
     where: "iGate Global Solutions (Capgemini), Bangalore",
-    what: "CRM modules for an online grocery platform in New York, and reusable AngularJS components that cut duplicate code across it.",
+    what: "Developed key CRM modules for an online grocery platform in New York, and built reusable AngularJS components that reduced duplicate code across it.",
   },
   {
     id: "sakha",

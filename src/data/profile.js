@@ -9,7 +9,6 @@ export const profile = {
   resumeUrl: "/Amala_Jose_Resume.pdf",
   portraitUrl: "/portrait.jpg",
 
-  // TODO: replace with the real profile URL before publishing.
   linkedinUrl: "https://www.linkedin.com/in/amala-jose-040b4260/",
 
   headline: "I lead the team. I write the code. I'm working toward owning the shape of it.",
