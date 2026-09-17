@@ -14,16 +14,14 @@ export const profile = {
   heroLine:
     "Frontend Technical Lead who has spent 14 years architecting enterprise SaaS platforms, from Angular systems of record to React and Next.js at scale.",
   summary: [
-    "Frontend Technical Lead with 14 years of experience architecting and delivering enterprise SaaS applications using React, Next.js, and TypeScript. Combines hands-on technical leadership, owning frontend architecture, design systems, and engineering standards across 7 enterprise healthcare platforms, with people leadership, mentoring teams of up to 8 engineers.",
-    "Comfortable operating as both a technical lead driving delivery and an architect owning system-wide frontend decisions, component strategy, and cross-team standards. Focused on performance, accessibility, and scalable, maintainable frontend systems.",
+    "Frontend Technical Lead with 14 years of experience architecting and delivering enterprise SaaS applications using React, Next.js, and TypeScript. Combines hands-on technical leadership, contributing to frontend architecture, design systems, and engineering standards across multiple enterprise healthcare platforms, with hands-on mentoring of frontend engineers.",
+    "Comfortable operating as both a technical lead driving delivery and a contributor to system-wide frontend decisions, component strategy, and cross-team standards. Focused on performance, accessibility, and scalable, maintainable frontend systems.",
   ],
 };
 
 export const stats = [
   { value: "14+", label: "Years in frontend engineering" },
-  { value: "50+", label: "Production React & Next.js features shipped" },
-  { value: "90%", label: "Fewer production issues after new standards" },
-  { value: "8", label: "Engineers mentored directly" },
+  { value: "5+", label: "Enterprise healthcare SaaS platforms shipped" },
 ];
 
 export const skillGroups = [
@@ -108,12 +106,16 @@ export const experience = [
     stack:
       "React.js, Next.js, Angular 18, TypeScript, Tailwind CSS, Bootstrap, NestJS, Azure, Git, .NET Integration",
     bullets: [
-      "Owned frontend architecture for 5+ enterprise healthcare SaaS applications, delivering 50+ production React and Next.js features from design through production deployment.",
-      "Improved frontend performance through code splitting, lazy loading, memoization, and bundle optimization, reducing page load time by 20%.",
-      "Established reusable error-handling patterns and frontend engineering standards, reducing production issues by 90%.",
-      "Built and owned a reusable component library and design system adopted across multiple enterprise applications, cutting duplicate UI development effort by 60%.",
-      "Led architecture discussions and design reviews, reviewed pull requests, and set technical direction across multiple product teams.",
-      "Mentored 8 frontend engineers through code reviews, architecture discussions, and pair programming.",
+      "Owned frontend implementation for key modules across enterprise healthcare SaaS applications (LiveOn, CoachOn, eHub, ConfigSuite), delivering production React and Next.js features from design through deployment while maintaining accessibility and performance standards.",
+      "Partnered with Product, UX, Backend, and QA to translate business requirements into scalable frontend solutions across multiple enterprise healthcare platforms.",
+      "Improved frontend performance through code splitting, lazy loading, memoization, and bundle optimization, measurably reducing page load times.",
+      "Established reusable error-handling patterns and frontend engineering standards that reduced production issues and improved application reliability.",
+      "Contributed to architecture discussions and design reviews, reviewed pull requests, and helped shape technical direction across product teams.",
+      "Built scalable React applications using TypeScript, Redux Toolkit, Context API, custom hooks, and asynchronous data flows supporting complex enterprise workflows.",
+      "Built and owned a reusable component library and design system adopted across multiple enterprise applications, reducing duplicate UI development effort and improving UI consistency.",
+      "Mentored frontend engineers through code reviews, architecture discussions, and pair programming, improving code quality and engineering consistency.",
+      "Leveraged Cursor and Claude to accelerate development, automate repetitive tasks, and improve engineering productivity.",
+      "Streamlined frontend CI/CD workflows with DevOps, reducing release friction and improving deployment quality.",
     ],
   },
   {
@@ -124,7 +126,7 @@ export const experience = [
     stack: "Angular, RxJS, NgRx, Bootstrap, TypeScript",
     bullets: [
       "Led frontend development of Plan Compare, a public-facing portal for Medicare beneficiaries to browse and compare insurance plans without login.",
-      "Architected state management using NgRx and RxJS, improving data flow predictability and reducing UI bugs across complex comparison flows.",
+      "Designed and implemented state management for the Plan Compare comparison flows using NgRx and RxJS, improving data flow predictability and reducing UI bugs.",
       "Owned code reviews and guided team members on Angular best practices, reusable component design, and performance tuning.",
     ],
   },
@@ -183,12 +185,12 @@ export const projects = [];
 export const credentials = {
   education: [
     {
-      degree: "MCA",
+      degree: "Master of Computer Applications (MCA)",
       school: "IGNOU, Bangalore, India",
       year: "2016",
     },
     {
-      degree: "Bachelor of Science, Computer Science",
+      degree: "Bachelor of Science(Bsc), Computer Science",
       school: "Providence Women's College, Kerala, India",
       year: "2012",
     },
