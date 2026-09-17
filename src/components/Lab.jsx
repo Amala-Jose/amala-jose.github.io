@@ -12,7 +12,7 @@ export function Lab() {
   if (lab.length === 0) return null;
 
   return (
-    <section aria-labelledby="lab-heading">
+    <section id="lab" aria-labelledby="lab-heading">
       <div className="wrap section-pad">
         <h2 id="lab-heading">Code you can open</h2>
         <p className="section-lede">
