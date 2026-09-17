@@ -19,6 +19,7 @@
   letter-spacing: -0.02em;
   line-height: 1.1;
   color: var(--measure);
+  font-variant-numeric: tabular-nums;
 }
 
 .proof__label {

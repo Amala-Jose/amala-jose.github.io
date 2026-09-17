@@ -9,10 +9,29 @@
   font-size: 1.0625rem;
   margin: 0 0 0.6rem;
   font-weight: 600;
+  transition: transform var(--dur-fast) var(--ease);
 }
 
 .skills__body {
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.55;
+}
+
+/* Matches the hover language used on Arc rows and Lab items: a quiet
+   background tint plus a small nudge on the heading. Padding and an
+   equal negative margin keep the box's footprint identical to before. */
+.skills__item {
+  padding: 1rem;
+  margin: -1rem;
+  border-radius: 2px;
+  transition: background-color var(--dur-fast) var(--ease);
+}
+
+.skills__item:hover {
+  background: var(--surface);
+}
+
+.skills__item:hover .skills__group {
+  transform: translateX(2px);
 }

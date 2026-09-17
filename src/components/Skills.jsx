@@ -8,7 +8,7 @@ export function Skills() {
         <h2 id="skills-heading">What I work with</h2>
         <div className="skills">
           {skills.map((group) => (
-            <div key={group.id}>
+            <div className="skills__item" key={group.id}>
               <h3 className="skills__group">{group.group}</h3>
               <p className="skills__body">{group.body}</p>
             </div>

@@ -16,7 +16,7 @@ export function Actions({ size = "lg", target = "_self" }) {
       <Button href={`mailto:${profile.email}`} size={size}>
         Email me
       </Button>
-      <Button href={profile.linkedinUrl} size={size} target={target}>
+      <Button href={profile.linkedinUrl} size={size} external>
         LinkedIn
       </Button>
     </div>

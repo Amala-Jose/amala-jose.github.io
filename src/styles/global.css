@@ -72,7 +72,7 @@ img {
 }
 
 .section-pad {
-  padding: clamp(3rem, 7vw, 5rem) var(--gutter);
+  padding: clamp(3rem, 7vw, 5rem) 0;
 }
 
 .section-lede {
@@ -114,6 +114,30 @@ section h2 {
 .skip-link:focus {
   left: 0.75rem;
   top: 0.75rem;
+}
+
+section[id] {
+  /* Anchor targets need clearance for the sticky masthead, or the jump
+     lands with the heading hidden behind it. */
+  scroll-margin-top: 5rem;
+}
+
+/* Small outbound-link marker, shared by Button (external prop) and the
+   Lab links. Relies on the parent being a flex container with a gap for
+   spacing, rather than its own margin, so it sits consistently in both. */
+.external-icon {
+  display: inline-block;
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+a:hover .external-icon {
+  transform: translate(1px, -1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .external-icon {
+    transition: none;
+  }
 }
 
 /* ---- one orchestrated entrance, hero only ---- */
