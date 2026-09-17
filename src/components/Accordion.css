@@ -63,13 +63,45 @@
   outline-offset: 3px;
 }
 
+.accordion__label {
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+.accordion__summary:hover .accordion__label {
+  transform: translateX(2px);
+}
+
+/*
+  Smooth open and close via a CSS grid trick, rather than the instant
+  display:none the browser uses by default for <details> content.
+
+  A track cannot be transitioned from 0 to "auto", but it can be
+  transitioned from 0fr to 1fr, and overflow hidden clips whatever is
+  still growing or shrinking inside. This overrides the browser's default
+  toggle, so the disclosure still opens on a plain click with no
+  JavaScript beyond the native element.
+*/
 .accordion__body {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 0.3s var(--ease);
+}
+
+.accordion[open] > .accordion__body {
+  grid-template-rows: 1fr;
+}
+
+.accordion__body-inner {
+  min-height: 0;
   padding-bottom: 1rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .accordion__icon-h,
-  .accordion__icon-v {
+  .accordion__icon-v,
+  .accordion__label,
+  .accordion__body {
     transition: none;
   }
 }

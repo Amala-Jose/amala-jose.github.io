@@ -1,4 +1,5 @@
 import { Button } from "./Button.jsx";
+import { SectionNav } from "./SectionNav.jsx";
 import { profile } from "../data/index.js";
 import "./Masthead.css";
 
@@ -27,6 +28,7 @@ export function Masthead({ isStuck }) {
         </span>
 
         <span className="masthead__actions">
+          <SectionNav />
           <Button href={`mailto:${profile.email}`}>Email</Button>
           <Button href={profile.resumeUrl} tone="solid" download>
             Résumé

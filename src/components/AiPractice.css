@@ -1,0 +1,9 @@
+/* On mobile, everything past the opening line sits behind a disclosure.
+   Desktop is untouched, since Accordion renders flat above the breakpoint. */
+.ai-accordion {
+  margin-top: 0.5rem;
+}
+
+.ai-accordion .accordion__body-inner p + p {
+  margin-top: 1.2rem;
+}
