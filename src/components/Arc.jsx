@@ -1,3 +1,4 @@
+import { Accordion } from "./Accordion.jsx";
 import { arc } from "../data/index.js";
 import "./Arc.css";
 
@@ -7,13 +8,15 @@ export function Arc() {
       <div className="wrap section-pad">
         <h2 id="arc-heading">The route here</h2>
         <ol className="arc__list">
-          {arc.map((job) => (
+          {arc.map((job, index) => (
             <li className="arc__item" key={job.id}>
               <span className="arc__when">{job.when}</span>
               <div>
                 <p className="arc__role">{job.role}</p>
                 <p className="arc__where">{job.where}</p>
-                <p className="arc__what">{job.what}</p>
+                <Accordion summary="What this involved" defaultOpen={index === 0} className="arc__accordion">
+                  <p className="arc__what">{job.what}</p>
+                </Accordion>
               </div>
             </li>
           ))}

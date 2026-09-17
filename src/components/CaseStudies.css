@@ -82,3 +82,14 @@
   color: var(--measure);
   font-weight: 600;
 }
+
+/* On mobile, the reasoning becomes a disclosure inside the card. Desktop
+   is untouched, since Accordion renders flat above the breakpoint. */
+.case .accordion {
+  margin-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.case .accordion__summary {
+  padding-top: 0.75rem;
+}

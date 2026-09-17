@@ -1,0 +1,75 @@
+.accordion__summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--ink);
+  padding: 0.6rem 0;
+}
+
+.accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Icon: two lines forming a plus. Fast, slightly overshooting ease for the
+   "snappy" feel, distinct from the calmer easing used elsewhere on the site. */
+.accordion__icon {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  flex: none;
+}
+
+.accordion__icon-h,
+.accordion__icon-v {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--muted);
+  transform: translate(-50%, -50%);
+  transition: transform 0.22s cubic-bezier(0.34, 1.4, 0.4, 1);
+}
+
+.accordion__icon-h {
+  width: 100%;
+  height: 1.5px;
+}
+
+.accordion__icon-v {
+  width: 1.5px;
+  height: 100%;
+}
+
+.accordion[open] > .accordion__summary .accordion__icon-v {
+  transform: translate(-50%, -50%) rotate(90deg) scaleY(0);
+}
+
+.accordion[open] > .accordion__summary .accordion__icon-h {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.accordion__summary:hover .accordion__icon-h,
+.accordion__summary:hover .accordion__icon-v {
+  background: var(--ink);
+}
+
+.accordion__summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.accordion__body {
+  padding-bottom: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion__icon-h,
+  .accordion__icon-v {
+    transition: none;
+  }
+}

@@ -14,7 +14,7 @@ export const eras = [
   {
     id: "2021-now",
     year: "2021 to now",
-    stack: "React 18, Next.js, Redux, TypeScript",
+    stack: "React 18, Next.js, Redux, Angular, TypeScript",
     note: "Still hands on, now responsible for other people's code too.",
   },
 ];
