@@ -49,6 +49,13 @@
   margin: 0.5rem 0 0;
 }
 
+/* On mobile, the description becomes a disclosure. Desktop is untouched. */
+.arc__accordion .accordion__summary {
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
 @media (max-width: 40rem) {
   .arc__item {
     grid-template-columns: 1fr;

@@ -1,3 +1,4 @@
+export { Accordion } from "./Accordion.jsx";
 export { Button } from "./Button.jsx";
 export { Actions } from "./Actions.jsx";
 export { GridLayer } from "./GridLayer.jsx";

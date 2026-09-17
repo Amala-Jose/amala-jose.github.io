@@ -37,7 +37,7 @@
 
 .era + .era::before {
   left: 1.25rem;
-  transform: translateX(-1.25rem);
+  transform: translateX(-1.5rem);
 }
 
 .era:hover::before {
