@@ -24,9 +24,9 @@ export function Lab() {
           {lab.map((project) => (
             <li className="lab__item" key={project.id}>
               <h3 className="lab__name">{project.name}</h3>
-              <p className="lab__blurb">{project.blurb}</p>
 
-              <Accordion summary="Stack and links" className="lab__accordion">
+              <Accordion summary="Details and links" className="lab__accordion">
+                <p className="lab__blurb">{project.blurb}</p>
                 <p className="lab__stack">{project.stack.join(", ")}</p>
                 <p className="lab__links">
                   {project.links.map((link) => (
