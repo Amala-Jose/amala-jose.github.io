@@ -8,19 +8,15 @@ const LINKS = [
   { id: "contact", label: "Contact" },
 ];
 
-/**
- * A slim jump nav living inside the sticky masthead, rather than a fixed
- * sidebar. The page is a single column with no reserved side gutter, so a
- * separate floating rail would compete with the masthead for attention.
- * Four stops, not every section, since Code and the AI section are
- * supplementary reading rather than places someone jumps to directly.
- *
- * The active link is shown with an underline in ink, not the site's
- * --measure green, since that colour is reserved for values that were
- * actually measured and is never used as decoration.
- */
+// Computed once at module load. LINKS.map(...) used to run inside the
+// component body, producing a new array reference on every render even
+// though the contents never changed, which made useActiveSection think
+// its input had changed and rebuild the whole observer every time the
+// active section updated.
+const IDS = LINKS.map((link) => link.id);
+
 export function SectionNav() {
-  const activeId = useActiveSection(LINKS.map((link) => link.id));
+  const activeId = useActiveSection(IDS);
 
   return (
     <nav className="section-nav" aria-label="Page sections">

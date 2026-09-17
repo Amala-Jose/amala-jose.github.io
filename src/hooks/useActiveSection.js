@@ -1,20 +1,5 @@
 import { useEffect, useState } from "react";
 
-/**
- * Tracks which of the given section ids is currently most in view, for
- * highlighting the matching link in the masthead's section nav.
- *
- * The rootMargin treats a section as "current" once it has crossed roughly
- * the upper third of the viewport, rather than requiring it to fill the
- * screen, since the sections here vary a lot in height.
- *
- * The last section is a special case: if it's shorter than the trigger
- * band's distance from the bottom of the page, it can never cross into
- * that band naturally, since there's no more content left to scroll it
- * into position. Being scrolled to the very bottom of the document always
- * counts as that last section being active, regardless of what the
- * observer reports.
- */
 export function useActiveSection(ids) {
   const [activeId, setActiveId] = useState(ids[0] ?? null);
 
@@ -27,7 +12,7 @@ export function useActiveSection(ids) {
     const lastId = ids[ids.length - 1];
 
     const isAtBottom = () =>
-      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -49,8 +34,17 @@ export function useActiveSection(ids) {
 
     elements.forEach((el) => observer.observe(el));
 
+    // Throttled to one check per animation frame so this doesn't force a
+    // layout read on every raw scroll event, that per-event cost was the
+    // other contributor to the slowdown.
+    let frameQueued = false;
     const handleScroll = () => {
-      if (isAtBottom()) setActiveId(lastId);
+      if (frameQueued) return;
+      frameQueued = true;
+      requestAnimationFrame(() => {
+        if (isAtBottom()) setActiveId(lastId);
+        frameQueued = false;
+      });
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
 
