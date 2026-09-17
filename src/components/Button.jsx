@@ -28,7 +28,7 @@ export function Button({
   const className = ["btn", `btn--${tone}`, size === "lg" && "btn--lg"].filter(Boolean).join(" ");
 
   return (
-    
+    <a
       className={className}
       href={href}
       download={download || undefined}
